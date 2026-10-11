@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.portfolio {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e1b4b);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+}
+
+.logo {
+  font-size: 28px;
+  color: white;
+}
+
+.logo span {
+  color: #818cf8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #818cf8;
+}
+
+.welcome {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 8%;
+}
+
+.welcome h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.welcome h2 {
+  font-size: 27px;
+  color: #a5b4fc;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  max-width: 600px;
+  color: #cbd5e1;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.welcome button {
+  margin-top: 30px;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.welcome button:hover {
+  background: #818cf8;
+}
+.about {
+  padding: 80px 8%;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.about h2 {
+  font-size: 36px;
+  color: #a5b4fc;
+  margin-bottom: 25px;
+}
+
+.about p {
+  max-width: 750px;
+  color: #cbd5e1;
+  font-size: 18px;
+  line-height: 1.9;
+}
+.contact {
+  padding: 80px 8%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.contact h2 {
+  font-size: 36px;
+  color: #a5b4fc;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #cbd5e1;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: #6366f1;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #818cf8;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .welcome {
+    padding: 50px 6%;
+  }
+
+  .welcome h1 {
+    font-size: 38px;
+  }
+
+  .welcome h2 {
+    font-size: 22px;
+  }
+
+  .welcome p {
+    font-size: 16px;
+  }
+
+  .about,
+  .projects,
+  .contact {
+    padding: 55px 6%;
+  }
+
+  .about h2,
+  .projects h2,
+  .contact h2 {
+    font-size: 30px;
+  }
+}
